@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link type="text/css" href="scss/style.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+     <script src='js/jquery-3.1.1.min.js'></script>
+
+<title>Chat</title>
+
+
+</head>
+<body>
+
+
+<div id="chat">
+    <!-- Блок чата-->
+
+
+
+    <div id="header">
+        <!-- Верхушка с логотипом, часами и т.п.-->
+      <img src="images/sus.jpeg" id="logotype"
+           title="Древняя цивилизация ASUS" alt="logo"/>
+      <ul><li class="time" title="Вы в сети">Your time online: 9h 21min</li>
+          <li class="time" title="Время">Your local time is: 22:10</li>
+          <li title="Ваша информация"><a href="#">Edit personal info</a></li>
+          <li title="Личные сообщения"><a href="#">Private messages</a></li>
+      </ul>
+     <p id="logo" align="right" title="Знаете ли вы что..." >
+           Чат, где вы узнаете как всё работает! &nbsp;
+     </p>
+    </div>
+
+
+
+
+
+  <div id="wrapper">
+      <!-- Средняя часть чата-->
+
+
+
+      <div id="users">
+          <!-- Левый блок, посетители-->
+          <div class="info" title="Пользователей онлайн"> &nbsp; &nbsp; Online:</div>
+        <div id="list" title="users">
+            <b title="Уважай мою власть!">Eric Cartman</b><br/>
+            <b> Kenneth McCormick</b><br/>
+            <b>Stanley Marsh</b><br/>
+            <b>Kyle Broflovski</b><br/>
+        </div>
+      </div>
+
+
+
+      <div class="chatbox">
+          <!-- Правый блок, сообщения-->
+        <div id="chatbox_1" title="messages">
+            <!-- Общие сообщения-->
+        </div>
+
+   </div>
+
+
+
+  <div id="your_text">
+        <!-- Правый нижний блок, поле для ввода сообщений-->
+             <form action="#chatbox_1" method="get" name="your_letter" id="your_letter">
+    <p> <textarea placeholder="Поделись улыбкою своей, и она к тебе не раз еще вернется!"
+              name="comment" class="comment" title="Ваше слово" cols="94" rows="4"
+              autofocus>
+        </textarea>
+    </p>
+
+      <ul class="info" >
+              <!-- Элементы информации о поле ввода текста-->
+          <li title="Элемент для отображения общего кол-ва введенных символов">
+              characters entered</li>
+          <li title="Элемент для отображения кол-ва введенных букв">
+              letters entered</li>
+          <li title="Элемент для отображения кол-ва
+               невидимых символов (пробел, символ табуляции, перенос строки)">
+              whitespace characters entered</li>
+          <li title="Элемент для отображения кол-ва введенных знаков препинания">
+              punctuation marks entered</li>
+       </ul>
+
+      <div class="format">
+        <!-- Кнопки формата текста-->
+        <button type="button" title="Жирный" class="btn btn-default active" onclick="bolding()"><b>B</b></button>
+        <button type="button" title="Курсив" class="btn btn-default " onclick="italic()"><i>I</i></button>
+        <button type="button" title="Подчеркивание" class="btn btn-default " onclick="uppercase()"><u>U</u></button>
+        <button type="button" title="Линк" class="btn btn-default " onclick="link()">Link</button>
+       </div>
+             <p align="right"> <input name="submit" title="Послать всё!"
+                              type="submit" class="submit" value="Отправить">
+             </p>
+
+             </form>
+       </div>
+
+    </div>
+
+
+
+      <div id="footer">
+      <!-- -->
+         <p class="info" title="Год изготовления продукта">&copy;2017</p>
+       </div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
